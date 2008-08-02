@@ -1,0 +1,7 @@
+albums/web-app/WEB-INF/classes
+albums/web-app/WEB-INF/lib
+albums/web-app/WEB-INF/grails-app
+albums/web-app/WEB-INF/spring
+albums/tests/classes
+albums/tests/reports
+albums/staging
