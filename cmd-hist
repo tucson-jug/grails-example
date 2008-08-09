@@ -1,0 +1,500 @@
+   98  rm -rf my-sample/
+   99  mvn archetype:generate -DgroupId=com.gigism.sample -DartifactId=my-sample
+  100  ls
+  101  cd my-sample/
+  102  ls
+  103  emacs pom.xml
+  104  exit
+  105  cd /usr/local/groovy-
+  106  cd /usr/local/groovy-current
+  107  ls
+  108  ps aux | grep firefox
+  109  exit
+  110  cd workspaces
+  111  ls
+  112  mkdir grrr-space
+  113  groovysh
+  114  ls -l /opt
+  115  locate groovysh
+  116  echo $GROOVY_HOME
+  117  echo $JAVA_HOME
+  118  cd /usr/local/
+  119  ls
+  120  echo $M2_HOME
+  121  cp /home/lenards/downloads/groovy-binary-1.6-beta-1.zip .
+  122  sudo cp /home/lenards/downloads/groovy-binary-1.6-beta-1.zip .
+  123  ls
+  124  unzip groovy-binary-1.6-beta-1.zip 
+  125  sudo unzip groovy-binary-1.6-beta-1.zip 
+  126  ls
+  127  sudo rm groovy-binary-1.6-beta-1.zip 
+  128  sudo ln -s groovy-1.6-beta-1/ groovy
+  129  ls
+  130  rm groovy
+  131  sudo rm groovy
+  132  sudo ln -s groovy-1.6-beta-1/ groovy-current
+  133  ls
+  134  cd
+  135  emacs .bashrc
+  136  source .bashrc
+  137  ls -a | grep bash
+  138  groovysh
+  139  exit
+  140  cd downloads/
+  141  mv testapp2.tar.gz testapp2.ndy
+  142  sudo update-alternates --config java
+  143  update-alternates
+  144  java -version
+  145  ls -l /usr/bin | grep java
+  146  sudo update-alternatives --config java
+  147  java -version
+  148  ps aux | grep 'gnome'
+  149  kill -9 10783
+  150  groovy -e "new File('.').eachFileRecurse { println it }"
+  151  groovyConsole
+  152  groovy
+  153  groovysh
+  154  exit
+  155  ps aux | grep 'gnome-launch'
+  156  kill -9 6466
+  157  ps aux | grep 'gnome-launch'
+  158  kill -9 14690
+  159  gksu "update manager -c "
+  160  gksu "update manager -d "
+  161  update-manager -d
+  162  ps aux | grep 'console-kit-daemon'
+  163  ps | grep 'console-kit-daemon'
+  164  sudo killall console-kit-daemon
+  165  killall tracker
+  166  killall trackerd
+  167  ps aux | grep 'tracker'
+  168  killall gnome-panel
+  169  htop
+  170  top
+  171  wtop
+  172  htop
+  173  s2
+  174  alias
+  175  s2
+  176  exit
+  177  cowsay what you talkin' bout willis?
+  178  ;
+  179  man cowsay
+  180  cowsay -h
+  181  apt-get install cowsay
+  182  sudo apt-get install cowsay
+  183  man cowsay
+  184  cowsay "what you talkin' bout willis?"
+  185  killall gnome-launch-box
+  186  gnome-do
+  187  gnome-do -h
+  188  gnome-do --help
+  189  gconf-editor
+  190  killall gnome-launch-box
+  191  jj
+  192  gconf-editor
+  193  gnome-do
+  194  gconf-editor
+  195  gnome-do &
+  196  [B
+  197  man mv
+  198  man apti
+  199  man aptitude
+  200  exit
+  201  cd /usr/local/
+  202  ls
+  203  ls -l
+  204  groovysh
+  205  echo $JAVA_HOME
+  206  groovysh
+  207  exit
+  208  groovy -e "println 1 + 1"
+  209  groovy -e 'println 1 + 1'
+  210  groovy -e 'println 1 + !'
+  211  groovy -e 'println 1 + $'
+  212  nano
+  213  ls
+  214  mv Fibonacci.groovy devel/
+  215  cd devel/
+  216  ls
+  217  mkdir groovy
+  218  mv Fibonacci.groovy groovy/
+  219  ls
+  220  cd groovy/
+  221  ls
+  222  groovyc -d classes Fibonacci.groovy 
+  223  groovy Fibonacci.groovy 
+  224  ls
+  225  java classes.Fibonacci 
+  226  java classes/Fibonacci.class
+  227  ls
+  228  cd classes/
+  229  ls
+  230  java Fibonacci 
+  231  cd ..
+  232  which groovyc
+  233  java -classpath=.;/usr/local/groovy-current/bin classes/Fibonacci.class 
+  234  java -classpath:.;/usr/local/groovy-current/bin classes/Fibonacci.class 
+  235  java -help
+  236  java -help | more
+  237  java -classpath /usr/local/groovy-current/bin classes/Fibonacci.class 
+  238  echo $GROOVY_HOME
+  239  java -cp /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar;classes Fibonacci
+  240  ls
+  241  java -cp /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar;classes/ Fibonacci
+  242  java -classpath /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar;classes/ Fibonacci
+  243  java -classpath /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar;classes Fibonacci
+  244  java -classpath /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar,classes Fibonacci
+  245  java -classpath /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar ./cla
+  246  ls classes/
+  247  java -classpath "/usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar;classes" Fibonacci
+  248  cd classes/
+  249  java Fibonacci -cp /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar 
+  250  java -classpath /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar Fibonacci
+  251  java -classpath /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar Fibonacci.class
+  252  cd ..
+  253  java -cp /usr/local/groovy-current/embeddable/groovy-all-1.6-beta-1.jar:classes Fibonacci 
+  254  s2
+  255  cd downloads/
+  256  ls -l | grep 'bin'
+  257  cp 20061222_belkin_f5d9230us4_4.01.09\(mr\).bin 20061222_belkin_f5d9230us4_4.01.09.bin
+  258  ./20061222_belkin_f5d9230us4_4.01.09.bin
+  259  sudo ./20061222_belkin_f5d9230us4_4.01.09.bin
+  260  exit
+  261  ifconfig
+  262  ps aux | grep 'box'
+  263  htop
+  264  groovysh
+  265  dpkg -L | grep 'gstreamer'
+  266  dpkg -L
+  267  dpkg --help
+  268  dpkg --list
+  269  dpkg --list | grep gstreamer
+  270  cd /etc/apt/
+  271  ls
+  272  emacs sources.list
+  273  emacs -vt100 sources.list
+  274  nano sources.list
+  275  gedit sources.list
+  276  nano sources.list
+  277  sudo gedit sources.list
+  278  sudo apt-get upgrade
+  279  sudo apt-get update
+  280  sudo apt-get upgrade
+  281  ls
+  282  s2
+  283  sftp-s2
+  284  ls
+  285  more restoremysqlbackup.pl
+  286  ls
+  287  gedit restoremysqlbackup.pl
+  288  ./restoremysqlbackup.pl
+  289  >
+  290  > Katja
+  291  >
+  292  > Katja Schulz
+  293  > Managing Editor
+  294  > The Tree of Life Web Project
+  295  > http://tolweb.org
+  296  >
+  297  > University of Arizona
+  298  > Department of Entomology
+  299  > Forbes Building
+  300  > 1140 East South Campus Drive
+  301  > PO BOX 2100
+  302  > Tucson, AZ 85721-0036
+  303  >
+  304  > phone: 520-626-3903
+  305  > fax: 520-621-1150
+  306  > On Jul 14, 2008, at 1:40 PM, lenards@email.arizona.edu wrote:
+  307  >
+  308  >> Quoting Katja Schulz <treegrow@tolweb.org>:
+  309  >>
+  310  >>> Hi Andy,
+  311  >>>
+  312  >>> looks like the monitor is on, but the computer isn't.  Maybe there was
+  313  >>> a power outage last night.  Should I turn it on?  Do I push the big
+  314  >>> Dell button in the front?  What do I do then?
+  315  >>>
+  316  >>
+  317  >> I think there is a power button with an i in a circle below the big dell
+  318  >> button... but ya, just push the button it should boot up
+  319  >>
+  320  >> thanks
+  321  >>
+  322  /****************************************
+  323  > Katja
+  324  >
+  325  > Katja Schulz
+  326  > Managing Editor
+  327  > The Tree of Life Web Project
+  328  > http://tolweb.org
+  329  >
+  330  > University of Arizona
+  331  > Department of Entomology
+  332  > Forbes Building
+  333  ls
+  334  tar xzvf sql-scripts.tar.gz 
+  335  ls
+  336  exit
+  337  ifconfig
+  338  alias
+  339  exit
+  340  ps aux | grep 'jetty'
+  341  sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/lib/jvm/java-6-sun-1.6.0.05/jre/lib/i386/xawt/libmawt.so
+  342  ls -l /usr/lib/jvm 
+  343  sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/local/jdk1.5.0_14/jre/lib/i386/xawt/libmawt.so
+  344  sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/local/jdk1.5.0_14/jre/lib/i386/server/libjvm.so
+  345  sudo sed -i 's/XINERAMA/FAKEEXTN/g' /usr/local/jdk1.5.0_14/jre/lib/i386/libjava.so
+  346  echo $GROOVY_HOME
+  347  cd /usr/local
+  348  ls
+  349  sudo cp /home/lenards/downloads/grails-bin-1.0.3.tar.gz .
+  350  ls
+  351  tar zxvf grails-bin-1.0.3.tar.gz 
+  352  sudo tar zxvf grails-bin-1.0.3.tar.gz 
+  353  ls
+  354  sudo rm grails-bin-1.0.3.tar.gz 
+  355  ls
+  356  man ln
+  357  ln -s grails-1.0.3/ grails-current
+  358  sudo ln -s grails-1.0.3/ grails-current
+  359  ls 
+  360  cd
+  361  more .bashrc
+  362  nano .bashrc
+  363  more .bashrc
+  364  source .bashrc
+  365  echo $GRAILS_HOME
+  366  cd workspaces/grrr-space/collab-todo/
+  367  grails test-app
+  368  cd workspaces/grrr-space/
+  369  cd collab-todo/
+  370  grails run-app
+  371  grails test-app
+  372  grails create-controller todo
+  373  grails create-domain-class category
+  374  grails create-domain-class user
+  375  grails create-controller category
+  376  grails create-controller user
+  377  cd workspaces
+  378  ls
+  379  cd grrr-space/
+  380  ls
+  381  grails create-app collab-todo
+  382  ls
+  383  cd collab-todo/
+  384  ls
+  385  cd grails-app/conf/
+  386  ls
+  387  nano Config.groovy 
+  388  nano BootStrap.groovy 
+  389  nano DataSource.groovy 
+  390  nano UrlMappings.groovy 
+  391  cd ../..
+  392  grails run-app
+  393  grails create-domain-class todo
+  394  which bash
+  395  grails run-test
+  396  grails test-app
+  397  grails run-app
+  398  cd
+  399  chmod a+x groovy_gedit_support.bash 
+  400  ./groovy_gedit_support.bash 
+  401  gedit /usr/share/gtksourceview-2.0/language-specs/groovy.lang 
+  402  sudo gedit /usr/share/gtksourceview-2.0/language-specs/groovy.lang 
+  403  kcontrol
+  404  cd workspaces/grrr-space/collab-todo/
+  405  ls
+  406  grails run-app
+  407  exit
+  408  cd workspaces/grrr-space/collab-todo/
+  409  ls
+  410  grails run-app
+  411  exit
+  412  dpkg --list
+  413  dpkg --list | grep flash
+  414  dpkg --list | grep 'flash'
+  415  sudo apt-get install libflashsupport
+  416  sudo apt-get autoremove
+  417  exit
+  418  cd Documents/
+  419  ls
+  420  cd ..
+  421  cd downloads/
+  422  ls
+  423  ls | grep 'zip'
+  424  unzip BeginningGroovyAndGrails.zip 
+  425  cd BeginningGroovyAndGrails/
+  426  ls
+  427  cd chpt5
+  428  ls
+  429  cd collab-todo/
+  430  ls
+  431  cd web-app/
+  432  ls
+  433  cd images/
+  434  ls
+  435  cp header_background.gif /home/lenards/workspaces/grrr-space/collab-todo/web-app/images/
+  436  cd 
+  437  cd -
+  438  cd ..
+  439  ls
+  440  exit
+  441  cd workspaces/grrr-space/
+  442  cd collab-todo/
+  443  ls
+  444  clear
+  445  grails run-app
+  446  ls -l jukebox/
+  447  cd workspaces
+  448  cd grrr-space/
+  449  ls
+  450  cd Groovy/
+  451  ls
+  452  cd src/
+  453  ls
+  454  groovy M3UGenerator.groovy 
+  455  ls -l ~/jars
+  456  ls -l ~/devl
+  457  ls -l ~/devel
+  458  ls -l ~/devel/jars
+  459  groovy M3UGenerator.groovy 
+  460  cd ../..
+  461  ls
+  462  cd collab-todo/
+  463  ls
+  464  grails run-app
+  465  grails test-app UserController
+  466  cd 
+  467  cd downloads/BeginningGroovyAndGrails/
+  468  cd chpt5
+  469  cd collab-todo/
+  470  ls
+  471  grails run-app
+  472  ls
+  473  cd workspaces/grrr-space/
+  474  ls
+  475  cd collab-todo/
+  476  ls
+  477  touch goals.txt
+  478  nano goals.txt 
+  479  ps aux | grep eclipse
+  480  kill -9 9332
+  481  exit
+  482  sudo apt-get install gcc make
+  483  sudo apt-get install xlibs-dev libxdamage-dev libvorbis-dev libtheora-dev libasound-dev
+  484  sudo apt-get install gtk-recordmydesktop
+  485  recordmydesktop
+  486  exit
+  487  sudo apt-get install istanbul
+  488  sudo apt-get install qemu audacity
+  489  wget -c http://kent.dl.sourceforge.net/sourceforge/xvidcap/xvidcap_1.1.7_i386.deb
+  490  sudo dpkg -i xvidcap_1.1.7_i386.deb 
+  491  sudo apt-get install imagemagick
+  492  sudo dpkg -i xvidcap_1.1.7_i386.deb 
+  493  exit
+  494  s2
+  495  cowsay test
+  496  exit
+  497  cowsay whoa - this is cool
+  498  ls | grep mpeg
+  499  mplayer test-0000.mpeg 
+  500  totem test-0000.mpeg 
+  501  ls -lh | grep 'test-'
+  502  git config
+  503  git-config
+  504  mkdir git-together-examples
+  505  cd git-together-examples/
+  506  git init
+  507  touch README
+  508  touch INSTALL
+  509  touch EXAMPLE
+  510  git add README INSTALL EXAMPLE
+  511  git commit -m 'first initial commit'
+  512  git push origin master
+  513  ls
+  514  ls -la
+  515  rm *
+  516  rm -rf .git
+  517  cd 
+  518  rm test-0000.mpeg 
+  519  rm -rf git-together-examples/
+  520  rm test-0000.mpeg 
+  521  clear
+  522  totem test-0000.mpeg 
+  523  cd devel/
+  524  ls
+  525  mkdir grails-example
+  526  cd grails-example/
+  527  ls
+  528  cp '/media/disk/albums.zip' .
+  529  ls
+  530  unzip albums.zip 
+  531  ls
+  532  rm __MACOSX/
+  533  rm -rf __MACOSX/
+  534  ls 
+  535  cd
+  536  ls -lh test-0000.mpeg 
+  537  totem test-0000.mpeg 
+  538  rm test-0000.mpeg 
+  539  ls -lh test-0000.mpeg 
+  540  cd devel/grails-example/
+  541  clear
+  542  git init
+  543  ls
+  544  git add README
+  545  touch README
+  546  git add README
+  547  git add albums/*
+  548  git add albums.zip 
+  549  git commit -m 'first commit'
+  550  touch .gitignore
+  551  emacs .gitignore
+  552  nano .gitignore
+  553  git add .gitignore
+  554  git status
+  555  nano .gitignore 
+  556  git status
+  557  git remote add origin git@github.com:tucson-jug/grails-example.git
+  558  git push origin master
+  559  nano README
+  560  git status
+  561  git commit -m 'change the readme'
+  562  git push origin master
+  563  git-status
+  564  git add README
+  565  git push origin master
+  566  git commt -m 'whoa'
+  567  git commit -m 'whoa'
+  568  git push origin master
+  569  totem ~/test-0000.mpeg 
+  570  cd 
+  571  git diff 
+  572  pwd
+  573  cd devel/grails-example/
+  574  ls
+  575  git diff
+  576  git status
+  577  git log
+  578  git blame .gitignore
+  579  git branch
+  580  git branch feature-x
+  581  git branch
+  582  ls
+  583  git checkout feature-x
+  584  cd albums/
+  585  ls
+  586  grails run-app
+  587  grails upgrade
+  588  grails run-app
+  589  git status
+  590  git main.gsp
+  591  git add main.gsp
+  592  git add -i
+  593  more ../.gitignore
+  594  git ls-files
+  595  git ls-files | grep 'classes'
+  596  git ls-files | grep 'prototype'
+  597  touch ../cmd-hist; history > ../cmd-hist
