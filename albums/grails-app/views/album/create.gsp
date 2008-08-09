@@ -43,6 +43,15 @@
                                     <input type="text" id="title" name="title" value="${fieldValue(bean:album,field:'title')}"/>
                                 </td>
                             </tr> 
+
+                            <tr class="prop">
+                                <td valign="top" class="name">
+                                    <label for="label">Label:</label>
+                                </td>
+                                <td valign="top" class="value ${hasErrors(bean:album,field:'label','errors')}">
+                                    <g:select optionKey="id" from="${Label.list()}" name="label.id" value="${album?.label?.id}" ></g:select>
+                                </td>
+                            </tr> 
                         
                         </tbody>
                     </table>
