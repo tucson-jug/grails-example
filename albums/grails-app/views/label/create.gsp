@@ -4,21 +4,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="layout" content="main" />
-        <title>Create Album</title>         
+        <title>Create Label</title>         
     </head>
     <body>
         <div class="nav">
             <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list">Album List</g:link></span>
+            <span class="menuButton"><g:link class="list" action="list">Label List</g:link></span>
         </div>
         <div class="body">
-            <h1>Create Album</h1>
+            <h1>Create Label</h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
-            <g:hasErrors bean="${album}">
+            <g:hasErrors bean="${label}">
             <div class="errors">
-                <g:renderErrors bean="${album}" as="list" />
+                <g:renderErrors bean="${label}" as="list" />
             </div>
             </g:hasErrors>
             <g:form action="save" method="post" >
@@ -28,28 +28,19 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="artist">Artist:</label>
+                                    <label for="city">City:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:album,field:'artist','errors')}">
-                                    <g:select optionKey="id" from="${Artist.list()}" name="artist.id" value="${album?.artist?.id}" ></g:select>
+                                <td valign="top" class="value ${hasErrors(bean:label,field:'city','errors')}">
+                                    <input type="text" id="city" name="city" value="${fieldValue(bean:label,field:'city')}"/>
                                 </td>
                             </tr> 
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="title">Title:</label>
+                                    <label for="name">Name:</label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:album,field:'title','errors')}">
-                                    <input type="text" id="title" name="title" value="${fieldValue(bean:album,field:'title')}"/>
-                                </td>
-                            </tr> 
-
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="label">Label:</label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean:album,field:'label','errors')}">
-                                    <g:select optionKey="id" from="${Label.list()}" name="label.id" value="${album?.label?.id}" ></g:select>
+                                <td valign="top" class="value ${hasErrors(bean:label,field:'name','errors')}">
+                                    <input type="text" id="name" name="name" value="${fieldValue(bean:label,field:'name')}"/>
                                 </td>
                             </tr> 
                         

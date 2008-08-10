@@ -12,5 +12,7 @@
         </div>	
         <div class="logo"><img src="${createLinkTo(dir:'images',file:'grails_logo.jpg')}" alt="Grails" /></div>
         <g:layoutBody />		
+
+&copy; 2008 G2One
     </body>	
 </html>
