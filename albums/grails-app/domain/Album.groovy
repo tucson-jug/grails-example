@@ -4,7 +4,10 @@ class Album {
 		
 	static hasMany = [tracks: Track]
 	static belongsTo = [artist: Artist]
-	
+
+	static constraints = {
+		label(nullable: true)
+	}	
 	String toString() {
 		title
 	}

@@ -1,4 +1,0 @@
-class LabelControllerController {
-
-    def index = { }
-}
